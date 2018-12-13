@@ -31,7 +31,11 @@ This the main part of this application because its in the test function that we 
 In other words, each test sample,  the function computes the gradient of the loss with respect to the input data,
 creates a perturbed image by calling fgsm, then checks to see if the perturbed example is adversarial.
 ### Result
+
 We can see the accuracy dropping :
+
 ![capture](https://user-images.githubusercontent.com/45148200/49972073-e2992300-ff30-11e8-97f3-d2ac764abddb.PNG)
+
 And here are some examples of wrong predictions
+
 ![imshow](https://user-images.githubusercontent.com/45148200/49972138-fcd30100-ff30-11e8-90d1-d32fb81d4dc6.PNG)
