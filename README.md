@@ -5,7 +5,7 @@ First version is a classical MNIST with fully connected Layer
 ![mnist](https://user-images.githubusercontent.com/45148200/49903347-35a6a380-fe67-11e8-8a21-8873d2150336.PNG)
 
 ## Adverserial Images 
-Here is a basic notebook summerizing how to fool a classical MNIST
+Here is a basic notebook summarizing how to fool a classical MNIST
 ### Train Model 
 So first we either use a pretrained MNIST or we retrain an model from scratch which is not so complicated
 ### Fast Gradient Step Method - Attack
@@ -27,8 +27,8 @@ def fgsm (image, epsilon, data_grad):
     return perturbed_image
 ```
 ### Test Model
-This the main part of this application because its in the test function that we are gonna apply our fooling function.
-In other words, each test sample,  the function computes the gradient of the loss with respect to the input data,
+This is the main part of this program because it's in the test function that we are gonna apply our fooling function.
+In other words, for each test sample,  the function computes the gradient of the loss with respect to the input data,
 creates a perturbed image by calling fgsm, then checks to see if the perturbed example is adversarial.
 ### Result
 
